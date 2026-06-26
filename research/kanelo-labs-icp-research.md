@@ -3,9 +3,12 @@
 **Prepared:** 26 June 2026
 **Question:** Which Ideal Customer Profile is most likely to produce Kanelo Labs' first 1–5 paid clients (30–90 days) for the *AI Usage & Data Exposure Review* — not the biggest long-term market.
 **Method:** Multi-agent web research (6 angles, 25 primary sources fetched, 121 claims extracted, 25 adversarially verified). Confidence labels used throughout:
-- **[VERIFIED]** — survived 2–3 independent refutation votes.
-- **[SOURCED]** — drawn from a named primary source but not independently re-verified (verification pass was cut short by an API limit).
+- **[VERIFIED]** — survived 2–3 independent refutation votes during the research run.
+- **[VERIFIED-DIRECT]** — re-checked by fetching the primary source and confirming the exact figure (verification pass, 26 Jun 2026).
+- **[SOURCED]** — drawn from a named primary source but not independently re-verified.
 - **[JUDGMENT]** — analytical inference from the evidence, not a single cited fact.
+
+> **Verification note (26 Jun 2026):** the load-bearing stats below were re-checked against their primary sources. One figure was corrected (an unsupported "44% data leakage" claim was removed) and one was added back (UK Copilot deployment — see Red Flags). The Prodrive IT 15% figure, the ShareGate survey figures, the Microsoft/Censuswide shadow-AI figures, the PI-insurer questions, and the FRC/ICAEW dates are all now confirmed direct from source.
 
 > **Headline:** The original hypothesis is *directionally right but mis-sized and under-targeted.* The evidence points to **narrowing by vertical (UK law firms first, accountancy/advisory second) and going SMALLER than 150–1,000 staff — to ~15–200 staff** — where the partner/owner is both the pain-feeler and the economic buyer, regulatory + PI-insurance + client-assurance triggers are live, and there is no internal security team to compete with or slow you down.
 
@@ -14,10 +17,10 @@
 ## 1. Executive Summary
 
 **Best ICP (target first): UK law firms, ~15–150 fee-earners, Microsoft 365-heavy, no in-house security lead.**
-The only ICP where the *exact* Kanelo offer is already being monetised by others, the pain is quantified, and three independent buying triggers stack (regulatory, professional-indemnity, client confidentiality). A UK MSP (Prodrive IT) publicly states that **"over 15% of a firm's confidential files are potentially at risk from oversharing, over-permissioning and erroneous access when using Copilot"** [SOURCED]. Law firms carry acute confidentiality duties (SRA), face AI-hallucination scrutiny in court filings, and are now being asked about AI governance by their PI insurers at renewal [SOURCED].
+The only ICP where the *exact* Kanelo offer is already being monetised by others, the pain is quantified, and three independent buying triggers stack (regulatory, professional-indemnity, client confidentiality). A UK MSP (Prodrive IT) publicly states that **"over 15% of your firm's confidential files are potentially at risk from oversharing, over-permissioning and erroneous access when using Copilot"** [VERIFIED-DIRECT]. Law firms carry acute confidentiality duties (SRA), face AI-hallucination scrutiny in court filings, and are now being asked about AI governance by their PI insurers at renewal [VERIFIED-DIRECT].
 
 **Best secondary ICP: UK accountancy / advisory firms, ~15–150 staff.**
-Same M365 + sensitive-client-data + regulatory profile (FRC June 2025 audit guidance; updated ICAEW Code of Ethics, July 2025) [SOURCED]. Critically, **accountants are themselves the #1 referral hub for SMEs** — winning a few accountancy clients buys a referral engine, not just revenue.
+Same M365 + sensitive-client-data + regulatory profile (FRC *AI in Audit* guidance, 26 June 2025; ICAEW 2025 Code of Ethics technology provisions in force 1 July 2025, adding self-interest/self-review "threats associated with the use of technology") [VERIFIED-DIRECT]. Critically, **accountants are themselves the #1 referral hub for SMEs** — winning a few accountancy clients buys a referral engine, not just revenue.
 
 **Best channel strategy:** Warm intros + partner referrals (legal/finance-specialist MSPs, DPO/compliance consultants, and accountants) feeding a **productised, fixed-price review** — *not* cold enterprise outreach and *not* a free consultation. Layer in vertical-specific LinkedIn content and one narrowly-targeted webinar ("Copilot without leaking client files — for law firms"). Speaking at a Law Society / regional law-society or accountancy-network event is the highest-trust accelerant if accessible.
 
@@ -28,9 +31,10 @@ Same M365 + sensitive-client-data + regulatory profile (FRC June 2025 audit guid
 - **The free-consultation-only model** (RiverSafe) [VERIFIED] — productise and charge a real (if modest) fee to qualify buyers and create urgency.
 
 **Key evidence (most load-bearing):**
-- Confidence-vs-reality gap: **29% of organisations report AI tools surfaced sensitive data that shouldn't have been accessible** (8% unsure) despite high stated confidence — the gap *is* the sales pitch [VERIFIED].
-- **71% of UK employees use unsanctioned AI tools; 44% of organisations report data leakage from shadow AI** (Microsoft-commissioned, Oct 2025) [SOURCED].
-- **Only 51% have run an org-wide governance review since enabling Copilot; ~47% of UK firms say they're very likely to bring in an external partner** to assess AI governance before scaling [SOURCED].
+- Confidence-vs-reality gap: **29% of organisations report AI tools surfaced sensitive data that shouldn't have been accessible** (UK-specific: 26%) despite 93–97% stated confidence in governance — the gap *is* the sales pitch [VERIFIED-DIRECT].
+- **71% of UK employees use unsanctioned AI tools at work; 51% use them weekly** (Microsoft-commissioned Censuswide survey of 2,003 UK staff, Oct 2025) [VERIFIED-DIRECT].
+- **Live trigger is near-universal in the UK: 94% of UK organisations have deployed Copilot to some degree, 63% fully** (vs 56% globally) [VERIFIED-DIRECT].
+- **Only 51% have run an org-wide governance review since enabling Copilot; 47% of UK firms say they're very likely to bring in an external partner — and ~8 in 10 globally** — to assess AI governance before scaling [VERIFIED-DIRECT].
 - Competitor wedge already exists and is productised (Atech's *Copilot Readiness Assessment*, *M365 Security Assessment*, *Data Security Engagement*) [VERIFIED] — validating the offer *and* showing the gap (those are framed adoption-first, by an MSP, to their own M365 base).
 - Pricing anchor for a micro-consultancy: **£500–£2,000 per assessment** is an established UK band [SOURCED].
 
@@ -81,7 +85,7 @@ Scores 1–5 (5 = most favourable). "Competition" is scored as **headroom** (5 =
 
 **Pain triggers (what makes them buy *now*)**
 1. **Copilot/AI rollout decision** — "we're about to turn this on and don't know what it can see." (Oversharing is the #1 fear: AI doesn't create oversharing, it *exposes* it — [SOURCED, helloitsliam/ShareGate].)
-2. **PI-insurance renewal** — insurers now ask professional-services firms detailed questions about AI usage, data handling and governance [SOURCED, Browne Jacobson Feb 2026]. A blank answer is a commercial problem.
+2. **PI-insurance renewal** — insurers now ask professional-services firms detailed questions about AI usage, data handling and governance, including verbatim: *"Have you adapted existing privacy policies, security protocols and technical and organisational security measures to account for AI usage?"* and *"What governance and human oversight will be used?"*; with a law-firm-specific set on monitoring AI "hallucinations" and human review of AI output before submission to courts [VERIFIED-DIRECT, Browne Jacobson, 26 Feb 2026]. A blank answer is a commercial problem.
 3. **Client security questionnaire / DDQ** — a corporate client asks "how do you govern staff AI use with our data?" and the firm has no answer.
 4. **Regulatory pressure** — SRA confidentiality duties; AI-hallucination incidents in court filings; (accountancy: FRC June 2025 + ICAEW Code July 2025) [SOURCED].
 5. **A near-miss / shadow-AI scare** — someone pasted a client document into ChatGPT.
@@ -218,8 +222,10 @@ Scores 1–5 (5 = most favourable). "Competition" is scored as **headroom** (5 =
 **Where the *recommended* ICP could be wrong — what would invalidate it:**
 - **If law firms won't grant tenant access** to a new, unknown founder (confidentiality paranoia cuts both ways), delivery stalls. *Mitigation:* tooling-partner scan + read-only scoping; lead with a lighter "interview + policy-gap" version first.
 - **If incumbent legal-IT MSPs already bundle this** for free, the wedge narrows. Evidence says they frame Copilot *adoption-first*, not *risk-first* [VERIFIED] — but verify per-target.
-- **If the buying trigger is softer than claimed** — the PI-insurer and ShareGate survey figures are **[SOURCED], not independently re-verified** (verification was cut short). Treat the *direction* as solid (multiple corroborating sources) but **confirm the specific stats before quoting them to a client.**
-- **Refuted stat — do not use:** the tempting line *"93% have deployed Copilot"* was **refuted 0–3**. The real 93% figure refers to *confidence that M365 governance is ready for AI*, **not** Copilot deployment [VERIFIED refutation]. Quoting it would be wrong and damage credibility.
+- **Buying-trigger figures are now confirmed** — the PI-insurer questions, the ShareGate survey figures (29%/47%/51%/~80%), the Microsoft/Censuswide shadow-AI figures (71%/51%), and the FRC/ICAEW dates were re-checked direct from source on 26 Jun 2026 [VERIFIED-DIRECT]. The direction *and* the specifics now hold.
+- **Two stat corrections from verification (use the right numbers):**
+  - **"93% have deployed Copilot" is wrong — do not use it.** That 93% is *confidence that M365 governance is ready for AI*, not deployment. The **correct** deployment figure is **94% of UK organisations have deployed Copilot to some degree, 63% fully** (ShareGate/Centiment, 850+ leaders). Use the corrected version.
+  - **"44% of organisations report data leakage from shadow AI" could not be confirmed** in the cited source and has been **removed**. The supportable shadow-AI figures are 71% use / 51% weekly (Microsoft/Censuswide) and 29% of orgs reporting AI surfaced sensitive data (ShareGate). Don't quote the 44%.
 - **If recruitment converts faster in practice** (most reachable, no procurement), it may beat law for the *very first* cash win even though it ranks lower on expansion. Worth a parallel test if law-firm access proves slow.
 
 **General evidence caveats:**
@@ -233,39 +239,41 @@ Scores 1–5 (5 = most favourable). "Competition" is scored as **headroom** (5 =
 
 **Demand / pain evidence**
 1. ShareGate — *93% confident in AI governance, but nearly 1 in 3 report data exposure* (29% surfaced sensitive data; sensitive-data categories). https://sharegate.com/blog/93-of-it-leaders-are-confident-in-their-ai-governance-but-nearly-1-in-3-report-data-exposure-incidents **[VERIFIED]**
-2. SecurityBrief UK — *UK firms face AI data exposure despite Copilot confidence* (47% likely to bring external partner; 850+ leaders survey; 51% governance review). https://securitybrief.co.uk/story/uk-firms-face-ai-data-exposure-despite-copilot-confidence **[SOURCED]**
-3. AICerts — *UK shadow AI surge: 71% use unapproved tools at work* (Microsoft-commissioned; 44% report data leakage). https://www.aicerts.ai/news/uk-shadow-ai-surge-71-use-unapproved-tools-at-work/ **[SOURCED]**
-4. Prodrive IT — *How UK law firms can maintain security & client confidentiality using Copilot* ("15% of files at risk"). https://www.prodriveit.co.uk/blog/how-uk-law-firms-can-maintain-security-client-confidentiality-using-copilot **[SOURCED]**
+2. SecurityBrief UK — *UK firms face AI data exposure despite Copilot confidence* (21 Apr 2026; ShareGate/Centiment, 850+ leaders: 29% data exposure, 94% UK Copilot deployment / 63% full, 51% governance review, 47% UK very likely to bring external partner, ~8 in 10 globally). https://securitybrief.co.uk/story/uk-firms-face-ai-data-exposure-despite-copilot-confidence **[VERIFIED-DIRECT]**
+3. AICerts — *UK shadow AI surge: 71% use unapproved tools at work* (3 Nov 2025; Microsoft-commissioned Censuswide survey of 2,003 UK staff: 71% use, 51% weekly). https://www.aicerts.ai/news/uk-shadow-ai-surge-71-use-unapproved-tools-at-work/ **[VERIFIED-DIRECT]**
+4. Prodrive IT — *How UK law firms can maintain security & client confidentiality using Copilot* (6 Nov 2025, Bruce Penson; "over 15% of your firm's confidential files are potentially at risk"). https://www.prodriveit.co.uk/blog/how-uk-law-firms-can-maintain-security-client-confidentiality-using-copilot **[VERIFIED-DIRECT]**
 5. helloitsliam.com — *Fix oversharing in SharePoint and OneDrive before Copilot deployment* ("AI doesn't create oversharing, it exposes it"). https://helloitsliam.com/2025/12/10/fix-oversharing-in-sharepoint-and-onedrive-before-copilot-deployment/ **[SOURCED]**
 6. CFOtech UK — *UK SMEs turn to AI before accountants* (accountancy disruption signal). https://cfotech.co.uk/story/uk-smes-turn-to-ai-before-accountants-survey-finds **[SOURCED]**
 
 **Regulatory / buying-trigger evidence**
-7. Browne Jacobson — *PI insurers' questions about clients' AI usage* (Feb 2026; law/accountancy AI risk; FRC/ICAEW). https://www.brownejacobson.com/insights/the-word-february-2026/pi-insurers-questions-about-clients-ai-usage **[SOURCED]**
-8. ICO — *Guidance on AI and data protection* (accountability, DPIA, special-category data). https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/ **[SOURCED]**
-9. DPO Centre — *Microsoft Copilot privacy & compliance tips*. https://www.dpocentre.com/blog/microsoft-copilot-privacy-compliance-tips/ **[SOURCED]**
-10. TechSpire — *AI usage policy for UK SMEs 2026*. https://techspireit.co.uk/ai-usage-policy-for-uk-smes-2026/ **[SOURCED]**
+7. Browne Jacobson — *Questions PI insurers should be asking about clients' AI usage* (26 Feb 2026, Joanna Wallens; verbatim insurer questions on adapted privacy policies/security measures and human oversight; dedicated law-firm section on AI "hallucinations" and human review). https://www.brownejacobson.com/insights/the-word-february-2026/pi-insurers-questions-about-clients-ai-usage **[VERIFIED-DIRECT]**
+8. FRC — *AI in Audit / Generative and Agentic AI Guidance* (illustrative example & documentation guidance published 26 June 2025). https://www.frc.org.uk/library/standards-codes-policy/audit-assurance-and-ethics/guidance/ai-in-audit/ • announcement: https://www.frc.org.uk/news-and-events/news/2025/06/frc-publishes-landmark-guidance-providing-clarity-to-audit-profession-on-the-uses-of-ai/ **[VERIFIED-DIRECT]**
+9. ICAEW — *Code of Ethics: impact of technology* (2025 Code in force 1 July 2025; new tech-threat provisions, e.g. ss. 200.6/206.A2). https://www.icaew.com/technical/trust-and-ethics/ethics/code-of-ethics/impact-of-technology **[VERIFIED-DIRECT]**
+10. ICO — *Guidance on AI and data protection* (accountability, DPIA, special-category data). https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/ **[SOURCED]**
+11. DPO Centre — *Microsoft Copilot privacy & compliance tips*. https://www.dpocentre.com/blog/microsoft-copilot-privacy-compliance-tips/ **[SOURCED]**
+12. TechSpire — *AI usage policy for UK SMEs 2026*. https://techspireit.co.uk/ai-usage-policy-for-uk-smes-2026/ **[SOURCED]**
 
 **Competitor / acquisition evidence**
-11. Atech — *Copilot Readiness Assessment* (3-phase). https://atech.cloud/workshops/atech-copilot-readiness-assessment/ **[VERIFIED]**
-12. Atech — *Workshops/assessments menu*. https://atech.cloud/workshops/ **[VERIFIED]**
-13. RiverSafe — *AI Governance & Secure AI Adoption* (enterprise refs; free consult; EU AI Act framing). https://riversafe.co.uk/cyber-security/ai-governance-and-ai-secure-adoption-services/ **[VERIFIED]**
-14. Darktrace — *Secure AI* (platform; "speak to sales"; covers Copilot/M365). https://www.darktrace.com/products/secure-ai **[VERIFIED]**
-15. CyberSmart — *Plans/pricing* (£999+VAT/yr; Cyber Essentials; SME; partner). https://cybersmart.co.uk/plans/ **[VERIFIED]**
-16. JC Cyber Security — founder-led; free-scan wedge. https://www.jc-cybersecurity.co.uk/ **[SOURCED]**
+13. Atech — *Copilot Readiness Assessment* (3-phase). https://atech.cloud/workshops/atech-copilot-readiness-assessment/ **[VERIFIED]**
+14. Atech — *Workshops/assessments menu*. https://atech.cloud/workshops/ **[VERIFIED]**
+15. RiverSafe — *AI Governance & Secure AI Adoption* (enterprise refs; free consult; EU AI Act framing). https://riversafe.co.uk/cyber-security/ai-governance-and-ai-secure-adoption-services/ **[VERIFIED]**
+16. Darktrace — *Secure AI* (platform; "speak to sales"; covers Copilot/M365). https://www.darktrace.com/products/secure-ai **[VERIFIED]**
+17. CyberSmart — *Plans/pricing* (£999+VAT/yr; Cyber Essentials; SME; partner). https://cybersmart.co.uk/plans/ **[VERIFIED]**
+18. JC Cyber Security — founder-led; free-scan wedge. https://www.jc-cybersecurity.co.uk/ **[SOURCED]**
 
 **Channel / first-client / GTM evidence**
-17. Venture in Security — *Starting a cybersecurity consulting practice* (niche + warm network lessons). https://ventureinsecurity.net/p/starting-a-cybersecurity-consulting **[SOURCED]**
-18. MSP360 — *How to get managed service clients*. https://www.msp360.com/resources/blog/how-to-get-managed-service-clients/ **[SOURCED]**
-19. Foxcrow Group — *MSP referral partner program* (referral partners already exist). https://www.foxcrowgroup.com/insights/msp-referral-partner-program/ **[SOURCED]**
-20. IASME — *Cyber Essentials* (sole NCSC delivery partner; 400+ certification bodies; Cyber Advisor scheme). https://iasme.co.uk/cyber-essentials/ **[SOURCED]**
-21. Microsoft Learn — *Solutions Partner for Security designation* (Microsoft partner ecosystem). https://learn.microsoft.com/en-us/partner-center/membership/solutions-partner-security **[SOURCED]**
-22. Compare the Cloud — *How a 5-person UK MSP can build a Cyber Essentials practice and charge £500–£2,000 per assessment* (pricing anchor). **[SOURCED]**
+19. Venture in Security — *Starting a cybersecurity consulting practice* (niche + warm network lessons). https://ventureinsecurity.net/p/starting-a-cybersecurity-consulting **[SOURCED]**
+20. MSP360 — *How to get managed service clients*. https://www.msp360.com/resources/blog/how-to-get-managed-service-clients/ **[SOURCED]**
+21. Foxcrow Group — *MSP referral partner program* (referral partners already exist). https://www.foxcrowgroup.com/insights/msp-referral-partner-program/ **[SOURCED]**
+22. IASME — *Cyber Essentials* (sole NCSC delivery partner; 400+ certification bodies; Cyber Advisor scheme). https://iasme.co.uk/cyber-essentials/ **[SOURCED]**
+23. Microsoft Learn — *Solutions Partner for Security designation* (Microsoft partner ecosystem). https://learn.microsoft.com/en-us/partner-center/membership/solutions-partner-security **[SOURCED]**
+24. Compare the Cloud — *How a 5-person UK MSP can build a Cyber Essentials practice and charge £500–£2,000 per assessment* (pricing anchor). **[SOURCED]**
 
 **Segmentation / context**
-23. Prospeo — *SMB vs mid-market*. https://prospeo.io/s/smb-vs-mid-market **[SOURCED]**
-24. ZoomInfo Pipeline — *SMB vs mid-market vs enterprise*. https://pipeline.zoominfo.com/sales/difference-between-smb-midmarket-enterprise-account-executives **[SOURCED]**
-25. Danish Lead Co — *Outbound for cybersecurity firms selling into mid-market*. https://danishleadco.io/blog/outbound-for-cybersecurity-firms-selling-into-mid-market **[SOURCED]**
-26. The Smarketers — *Buying-committee / ABM*. https://thesmarketers.com/blogs/buying-committee-marketing-abm/ **[SOURCED]**
+25. Prospeo — *SMB vs mid-market*. https://prospeo.io/s/smb-vs-mid-market **[SOURCED]**
+26. ZoomInfo Pipeline — *SMB vs mid-market vs enterprise*. https://pipeline.zoominfo.com/sales/difference-between-smb-midmarket-enterprise-account-executives **[SOURCED]**
+27. Danish Lead Co — *Outbound for cybersecurity firms selling into mid-market*. https://danishleadco.io/blog/outbound-for-cybersecurity-firms-selling-into-mid-market **[SOURCED]**
+28. The Smarketers — *Buying-committee / ABM*. https://thesmarketers.com/blogs/buying-committee-marketing-abm/ **[SOURCED]**
 
 *Additional competitor surfaced in research, not separately fetched:* Cloudiway (automated M365 AI-readiness scan, ~90 min) — corroborates the tooling-partner option for delivery.
 
